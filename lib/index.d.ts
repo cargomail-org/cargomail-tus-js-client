@@ -42,6 +42,7 @@ interface UploadOptions {
 
   chunkSize?: number;
   retryDelays?: number[];
+  enableChecksum?: boolean | null;
   parallelUploads?: number;
   parallelUploadBoundaries?: { start: number; end: number }[] | null;
   storeFingerprintForResuming?: boolean;  removeFingerprintOnSuccess?: boolean;
